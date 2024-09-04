@@ -162,7 +162,7 @@ def check_for_engine_binary(out_path):
 def makefile_command(net_path, make_path, out_path, compiler):
 
     # Build with -j, and EXE= to contol the output location
-    command = ['make', '-j', 'EXE=%s' % (out_path)]
+    command = ['make', 'EXE=%s' % (out_path)]
 
     # Build with CC/CXX= when using a custom compiler
     if compiler:
